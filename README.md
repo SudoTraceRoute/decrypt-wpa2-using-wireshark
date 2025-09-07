@@ -83,6 +83,7 @@ Enable: ✅ "Enable decryption"
 
 Click "Edit" next to Decryption Keys.
 
+
 Add:
 
 Key Type: wpa-pwd
@@ -92,7 +93,8 @@ Key: yourpassword:YourSSID
 
 Apply and review decrypted frames.
 
-🧪 Verifying Decryption
+
+**🧪 Verifying Decryption**
 
 You can confirm decryption is working if:
 
@@ -105,7 +107,8 @@ Coloring rules like arp, dhcp, etc. are applied
 
 You see real IP addresses and payloads
 
-Screenshot examples:
+
+**Screenshot examples:**
 
 📁 screenshots/ folder contains:
 
@@ -126,13 +129,14 @@ DHCP – IP assignment (Discover, Offer, Request, ACK)
 
 ARP – Address resolution
 
-ICMPv6, mDNS, IGMPv3 – Multicast and control protocols
-
 ❌ No TCP, HTTP, or TLS packets were decrypted — see reasons below.
 
-🚫 Missing TCP / HTTP / TLS Packets?
 
-Although browsing activity was generated, no TCP or TLS packets were decrypted. Likely reasons:
+**🚫 Missing TCP / HTTP / TLS Packets?**
+
+Although browsing activity was generated, no TCP or TLS packets were decrypted. 
+
+Likely reasons:
 
 🧱 USB adapter limitations (dropped high-throughput packets)
 
@@ -142,9 +146,10 @@ Although browsing activity was generated, no TCP or TLS packets were decrypted. 
 
 🧩 TLS traffic is encrypted end-to-end and often fragmented
 
-This is a hardware limitation, not a decryption failure.
+**This is a hardware limitation, not a decryption failure.**
 
-⚠️ Troubleshooting WPA3 Decryption
+
+**⚠️ Troubleshooting WPA3 Decryption**
 
 Wireshark cannot decrypt WPA3 traffic using the password like it can with WPA2.
 
@@ -162,7 +167,7 @@ Auth Key Management:
 
 SAE confirms WPA3 was in use — no passive decryption possible
 
-Solution:
+**Solution:**
 
 Changed router mode to WPA2-Personal only
 
@@ -172,7 +177,9 @@ Captured new handshake
 
 ✅ Wireshark successfully decrypted new capture
 
-Why WPA3 Can’t Be Decrypted Like WPA2
+
+
+**Why WPA3 Can’t Be Decrypted Like WPA2?**
 
 WPA3 uses forward secrecy (SAE), which doesn't expose enough key material during handshake
 
