@@ -1,1 +1,2 @@
-
+- It's clearly visible that the protocols EAPOL, DHCP, ARP, ICMPv6 and a few others are successfully decrypted by the Wireshark.
+- There are screenshoots of decrypted EAPOL 4-way handshake, DHCP (DORA) process - where the negotiation packets between client (my phone) and server (router) are visible, step by step.
