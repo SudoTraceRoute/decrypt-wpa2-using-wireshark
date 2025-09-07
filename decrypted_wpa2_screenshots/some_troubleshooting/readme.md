@@ -6,6 +6,6 @@ The decryption of the first packet capture was not possible, because my phone ne
 
 That is visible on the screenshot in this folder, please take a look at the line "Auth Key Management", where SAE is applied, which means that WPA3 is in use.
 
-The router settings had to be changed to WPA2-Personal, in order to force the devices to work with this protocol.
+The router settings had to be changed to WPA2-Personal, in order to force the devices to work with this certificate.
 
 The new packet capture was successfully decrypted by Wireshark.
