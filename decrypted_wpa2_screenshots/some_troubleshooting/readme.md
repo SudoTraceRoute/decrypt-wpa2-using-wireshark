@@ -1,11 +1,7 @@
-Wireshark will decrypt WPA2 packets, but this technique doesn't work with WPA3.
+The first packet capture could not be decrypted because the phone negotiated a WPA3 connection using SAE (Simultaneous Authentication of Equals), the key exchange method used by WPA3.
 
-The settings of router was WPA2/WPA3, that was confirmed by Terminal command: "nmcli dev wifi".
+You can verify this in the screenshot provided in this folder — look for the line labeled "Auth Key Management", where SAE is listed. This indicates that WPA3 was in use, and thus the standard WPA2 decryption method would not apply.
 
-The decryption of the first packet capture was not possible, because my phone negotiated WPA3 as a encryption certificate.
+To fix this, the router settings were changed to WPA2-Personal only, forcing all devices to use WPA2.
 
-That is visible on the screenshot in this folder, please take a look at the line "Auth Key Management", where SAE is applied, which means that WPA3 is in use.
-
-The router settings had to be changed to WPA2-Personal, in order to force the devices to work with this certificate.
-
-The new packet capture was successfully decrypted by Wireshark.
+After this change, a new packet capture was made — and Wireshark successfully decrypted it using the WPA2 4-way handshake and the correct password.
