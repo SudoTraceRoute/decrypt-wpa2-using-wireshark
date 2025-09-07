@@ -26,6 +26,7 @@ This project demonstrates how to capture and decrypt WPA2-encrypted Wi-Fi traffi
 - **Router:** WPA2/WPA3 mixed mode, SSID: `asdfgh`, Channel: 11
 - **Wireshark Version:** 4.0.4
 
+
 ### CLI Tools
 
 
@@ -42,6 +43,7 @@ This project demonstrates how to capture and decrypt WPA2-encrypted Wi-Fi traffi
 (**instead wlan0 use the name of the your's wifi adapter interface**)
 
 
+
 **🎯 Objective**
 
 Capture a full WPA2 4-way EAPOL handshake
@@ -55,6 +57,7 @@ Investigate why TCP/HTTP/TLS traffic may not be captured or decrypted
 Troubleshoot WPA3-related issues
 
 
+
 **📸 Capturing the Handshake**
 
 Set adapter to monitor mode and fix to correct channel.
@@ -66,6 +69,7 @@ Force phone to reconnect to Wi-Fi (disconnect → forget network → reconnect).
 Generate some traffic by browsing (images, pages, etc.).
 
 Save .pcap file.
+
 
 
 **🔓 Decryption in Wireshark**
