@@ -186,3 +186,21 @@ WPA3 uses forward secrecy (SAE), which doesn't expose enough key material during
 No PSK (pre-shared key) is transmitted or derivable from the handshake
 
 Decryption requires a live MITM attack — not feasible or ethical in typical analysis
+
+
+**✅ Summary**
+
+Successfully captured WPA2 EAPOL handshake
+
+Decrypted real traffic using Wireshark with PSK and SSID
+
+Identified DHCP, ARP, and ICMPv6 as proof of decryption
+
+Learned limitations of capturing TCP/TLS over Wi-Fi with USB adapters
+
+Troubleshooted and documented WPA3-related issues (SAE)
+
+**🙌 Acknowledgements**
+
+This project was created for learning and research purposes.
+Thanks to the Wireshark team and open-source Linux networking tools.
